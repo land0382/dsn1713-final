@@ -1,0 +1,107 @@
+// Import Roboto Slab from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+// Color variables
+$primary-color: #5EC4B3;
+$secondary-color: #255957;
+$tertiary-color: #eee5e9;
+$quaternary-color: #1C0f13;
+$quinary-color: #b5b5b5;
+$senary-color: #fffafb;
+
+// Navbar Styles
+#navbar {
+    padding: 15px 20px; /* Increased padding for space around navbar items */
+    position: fixed;
+    top: 3px; /* Moves the navbar 20px down from the top */
+    width: 100%;
+    z-index: 10; /* Keeps the navbar on top */
+    border-bottom: 0.5px solid $primary-color; /* Adds a thin border at the bottom with primary color */
+
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    padding: 8px 15px;
+    color: $primary-color; /* Default link color */
+    transition: all 0.3s ease;
+}
+
+#navbar a:hover {
+    color: $secondary-color; /* Hover effect on links */
+}
+
+#navbar .btn-login {
+    background-color: $secondary-color; /* Login button color */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+#navbar .btn-login:hover {
+    background-color: darken($secondary-color, 10%); /* Darken on hover */
+}
+
+// Adjust navbar items to the left and avoid "LOG IN" going off-screen
+#navbar ul {
+    margin-right: 50px; /* Adjust this value to move items to the left */
+}
+
+#navbar .btn-login {
+    margin-left: 20px; /* Optional: gives space between "ABOUT" and "LOG IN" */
+}
+
+// Logo position (still top-left)
+#logo {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 60px; /* Adjust size of the logo */
+    height: auto;
+    z-index: 20; /* Ensure the logo is on top of the navbar */
+
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+// Header Styles (All Bold)
+h1, h2, h3, h4, h5 {
+    font-weight: bold;  // Apply bold to all headers
+    font-family: 'Roboto Slab', serif;  // Use the Roboto Slab font
+}
+
+h1 {
+    font-size: 64pt;  
+}
+
+h2 {
+    font-size: 54pt;  
+}
+
+h3 {
+    font-size: 44pt;  
+}
+
+h4 {
+    font-size: 34pt;  
+}
+
+h5 {
+    font-size: 24pt;  
+}

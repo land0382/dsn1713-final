@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+#navbar {
+  padding: 15px 20px; /* Increased padding for space around navbar items */
+  position: fixed;
+  top: 3px; /* Moves the navbar 20px down from the top */
+  width: 100%;
+  z-index: 10; /* Keeps the navbar on top */
+  border-bottom: 0.5px solid #5EC4B3; /* Adds a thin border at the bottom with primary color */
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  display: inline;
+}
+
+#navbar a {
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  padding: 8px 15px;
+  color: #5EC4B3; /* Default link color */
+  transition: all 0.3s ease;
+}
+
+#navbar a:hover {
+  color: #255957; /* Hover effect on links */
+}
+
+#navbar .btn-login {
+  background-color: #255957; /* Login button color */
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+#navbar .btn-login:hover {
+  background-color: rgb(22.0238095238, 52.9761904762, 51.7857142857); /* Darken on hover */
+}
+
+#navbar ul {
+  margin-right: 50px; /* Adjust this value to move items to the left */
+}
+
+#navbar .btn-login {
+  margin-left: 20px; /* Optional: gives space between "ABOUT" and "LOG IN" */
+}
+
+#logo {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 60px; /* Adjust size of the logo */
+  height: auto;
+  z-index: 20; /* Ensure the logo is on top of the navbar */
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+}
+
+h1 {
+  font-size: 64pt;
+}
+
+h2 {
+  font-size: 54pt;
+}
+
+h3 {
+  font-size: 44pt;
+}
+
+h4 {
+  font-size: 34pt;
+}
+
+h5 {
+  font-size: 24pt;
+}
+
+/*# sourceMappingURL=custom.css.map */
