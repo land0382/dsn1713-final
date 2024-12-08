@@ -1,7 +1,5 @@
-// Import Roboto Slab from Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-// Color variables
 $primary-color: #5EC4B3;
 $secondary-color: #255957;
 $tertiary-color: #eee5e9;
@@ -9,11 +7,10 @@ $quaternary-color: #1C0f13;
 $quinary-color: #b5b5b5;
 $senary-color: #fffafb;
 
-// Navbar Styles
 #navbar {
     padding: 15px 20px;
     position: fixed;
-    top: 0;  // Fix the navbar to the top of the screen
+    top: 0;  
     left: 0;
     width: 100%;
     z-index: 10;
@@ -57,7 +54,6 @@ $senary-color: #fffafb;
     background-color: darken($secondary-color, 10%);
 }
 
-// Adjust navbar items to the left and avoid "LOG IN" going off-screen
 #navbar ul {
     margin-right: 50px;
 }
@@ -66,19 +62,17 @@ $senary-color: #fffafb;
     margin-left: 20px;
 }
 
-// Logo position (stay within the navbar and follow the scroll)
 #logo {
-    position: fixed;  // Make sure the logo stays fixed and follows the navbar
-    left: 20px;  // Position logo a little from the left edge
-    width: 55px;  // Adjust the logo size
+    position: fixed;
+    left: 20px;  
+    width: 55px;  
     height: auto;
-    z-index: 20;  // Ensure the logo stays above other navbar elements
+    z-index: 20;  
 }
 
-// Add a background color to the navbar when scrolling
 body.scrolled #navbar {
-    background-color: rgba($senary-color, 0.7);  // Darken the navbar background slightly when scrolled
-    border-bottom: 0.5px solid $secondary-color;  // Optional: Change the border color when scrolled
+    background-color: rgba($senary-color, 0.7); 
+    border-bottom: 0.5px solid $secondary-color;
 }
 
 
@@ -86,7 +80,6 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
-// Header Styles (All Bold)
 h1, h2, h3, h4, h5 {
     font-weight: bold;
     font-family: 'Roboto Slab', serif;
@@ -112,7 +105,6 @@ h5 {
     font-size: 10pt;
 }
 
-// Global wrapper to ensure the footer stays at the bottom
 html, body {
     height: 100%;
     margin: 0;
@@ -120,12 +112,10 @@ html, body {
     flex-direction: column;
 }
 
-// Main container (wraps all content including hero section)
 #main-content {
     flex-grow: 1;
 }
 
-// Hero Section Styling
 #hero-banner {
     position: relative;
     background-size: cover;
@@ -141,7 +131,7 @@ html, body {
 
     .btn-signup {
         position: relative;
-        z-index: 3;  // Ensure it's on top
+        z-index: 3;  
         background-color: $secondary-color;
         color: white;
         padding: 15px 25px;
@@ -150,7 +140,7 @@ html, body {
         border: none;
         cursor: pointer;
         transition: all 0.3s ease;
-        text-decoration: none;  // Removes the underline
+        text-decoration: none;
         margin-top: 20px;
 
         &:hover {
@@ -158,7 +148,6 @@ html, body {
         }
     }
 
-    // Overlay Styling
     .overlay {
         content: "";
         position: absolute;
@@ -194,15 +183,15 @@ html, body {
 }
 
 #latest-tacks, #most-tacked-this-month, #leader-board {
-    margin: 20px auto;  // Center the sections with margins
+    margin: 20px auto; 
     padding: 10px;
-    max-width: 800px;  // Set a maximum width for the boxes (adjust as needed)
-    width: 90%;  // Make the width relative to the screen size, but never exceed 800px
+    max-width: 800px;  
+    width: 90%;  
 
     h2 {
-        text-align: center;  // Center the header
-        color: $primary-color;  // Set the color to $primary-color
-        margin-bottom: 20px;  // Add some spacing below the header
+        text-align: center;  
+        color: $primary-color;  
+        margin-bottom: 20px;  
     }
 
     ul {
@@ -215,29 +204,27 @@ html, body {
             justify-content: space-between;
             align-items: center;
             background-color: white;
-            border: 2px solid $primary-color;  // Boxline using $primary-color
+            border: 2px solid $primary-color;  
             margin-bottom: 10px;
             padding: 10px;
             border-radius: 5px;
 
             .tack-name, .tack-time {
-                color: black;  // Set text color inside the boxes to black
+                color: black;  
             }
         }
     }
 }
 
-// Add the primary color line between the sections
 #leader-board {
-    border-top: 2.5px solid $primary-color;  // The line between the sections
-    padding-top: 20px;  // Add some space above the list to avoid the line being too close to the text
-    width: 90%;  // Make the line span 90% of the section width
-    margin: 0 auto;  // Center the line horizontally
+    border-top: 2.5px solid $primary-color;  
+    padding-top: 20px;  
+    width: 90%;  
+    margin: 0 auto;  
     margin-bottom: 40px;
 }
 
 
-// Footer Section (without z-index)
 #footer {
     position: relative;
     background-image: url('images/background-with-supplies.webp');
@@ -259,26 +246,26 @@ html, body {
 
     .footer-right {
         width: 40%;
-        text-align: right;  // Align text and icons to the right
+        text-align: right;
         display: flex;
-        justify-content: flex-end;  // Ensure icons are aligned to the right
-        align-items: center;  // Align items vertically centered
+        justify-content: flex-end;  
+        align-items: center;  
     }
 
     .social-icons {
         display: flex;
-        gap: 15px;  // Space between icons
+        gap: 15px; 
 
         a {
             display: inline-block;
             width: 40px;
             height: 40px;
-            background-color: $primary-color;  // Set a background color for the circle
+            background-color: $primary-color;  
             border-radius: 50%;
             text-align: center;
             line-height: 40px;
-            font-size: 24px;  // Larger font size for bigger icons
-            color: white !important;  // Ensure icons are white
+            font-size: 24px; 
+            color: white !important;  
             transition: transform 0.3s;
 
             &:hover {
@@ -286,7 +273,7 @@ html, body {
             }
 
             i {
-                color: white;  // Ensure the icon inside the link is white
+                color: white;  
             }
         }
     }
@@ -325,12 +312,11 @@ html, body {
 
 }
 
-//TACK BOARD SECTION
 #tack-board-banner {
     position: relative;
     background-size: cover;
     background-position: center top;
-    background-color: $secondary-color; // Change to $secondary-color
+    background-color: $secondary-color;
     width: 100%;
     color: $senary-color;
     padding: 50px 300px;
@@ -340,7 +326,7 @@ html, body {
     z-index: 2;
 
     .hero-content {
-        max-width: 800px; // Optional: Limit content width
+        max-width: 800px; 
         h1 {
             font-size: 35px;
             margin-bottom: 10px;
@@ -354,115 +340,114 @@ html, body {
 }
 
 .active-tacks-header {
-    color: $primary-color; // Set text color to $primary-color
-    font-size: 24px; // Adjust size as needed
+    color: $primary-color; 
+    font-size: 24px;
     font-weight: normal;
     text-align: left;
-    padding-top: 20px; // Adds padding at the top, adjust as needed
+    padding-top: 20px; 
 
     &::after {
         content: '';
         display: block;
-        width: 100%; // Line spans the entire page width
-        height: 0.5px; // Thickness of the line
-        background-color: $primary-color; // Same color as the text
-        margin-top: 5px; // Space between text and line
+        width: 100%; 
+        height: 0.5px; 
+        background-color: $primary-color; 
+        margin-top: 5px; 
     }
 }
 
 .active-tacks {
-    padding: 0 300px; // Adds space inside the active-tacks container
-    box-sizing: border-box; // Ensures padding is included in the container's width
+    padding: 0 300px; 
+    box-sizing: border-box; 
 }
 
 .tack-list {
-    list-style-type: none; // Remove default list styles
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 .tack-list li {
     display: flex;
-    flex-direction: column; // Stack the contents vertically
+    flex-direction: column; 
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: $primary-color; // Set the background of each list item to $primary-color
-    border: 2px solid $primary-color; // Border to match the background color
-    margin-bottom: 15px; // Space between list items
-    padding: 20px; // Space inside the list item
+    background-color: $primary-color; 
+    border: 2px solid $primary-color; 
+    margin-bottom: 15px; 
+    padding: 20px; 
 
     strong, p {
-        color: $senary-color; // Set the text color inside the boxes to $senary-color
+        color: $senary-color; 
     }
 
     strong {
-        font-size: 18px; // Adjust the size as needed
+        font-size: 18px; 
     }
 
     p {
-        margin: 3px 0; // Space between paragraphs
-        font-size: 14px; // Adjust the size of the text
+        margin: 3px 0; 
+        font-size: 14px; 
     }
 }
 
 .separator-line {
     content: '';
     display: block;
-    width: 100%; // Line spans the entire page width
-    height: 0.5px; // Thickness of the line
-    background-color: $primary-color; // Same color as the text and header line
-    margin-top: 20px; // Space between the list and the line
+    width: 100%; 
+    height: 0.5px; 
+    background-color: $primary-color; 
+    margin-top: 20px; 
 }
 
 .actions {
-    text-align: center;  // Center everything inside the actions container
-    margin-top: 20px;  // Add space from the previous content
+    text-align: center;  
+    margin-top: 20px;  
 }
 
 .footer-logo-text {
     display: flex;
-    flex-direction: column;  // Stack the logo and text vertically
-    align-items: center;  // Center horizontally
-    justify-content: center;  // Center vertically
-    margin-bottom: 15px;  // Space between the logo and text
+    flex-direction: column;  
+    align-items: center;  
+    justify-content: center;  
+    margin-bottom: 15px;  
 }
 
 .footer-logo {
-    width: 210px;  // Adjust logo size as needed
+    width: 210px; 
     height: auto;
-    margin-bottom: 10px;  // Space between the logo and "Tack More Words!" text
+    margin-bottom: 10px;  
 }
 
 .tack-more {
-    font-size: 18px;  // Font size for the text
-    color: $primary-color;  // Change text color to $primary-color
-    margin: 5px 0;  // Space between the text and the "See More" button
+    font-size: 18px;  
+    color: $primary-color;  
+    margin: 5px 0;  
 }
 
 .btn-secondary {
-    display: inline-block;  // Make the link look like a button
-    color: $primary-color;  // Set the link text color to $primary-color
-    text-decoration: none;  // Remove underline from the link
-    font-size: 16px;  // Font size of the link
-    font-weight: bold;  // Make the link text bold
-    padding: 10px 20px;  // Add padding to the link
-    border: 2px solid $primary-color;  // Border around the link, same color as text
-    border-radius: 5px;  // Optional: round the link's corners
-    transition: background-color 0.3s ease, color 0.3s ease;  // Smooth transition on hover
-    margin-bottom: 30px;  // Add space below the "See More" button
+    display: inline-block;  
+    color: $primary-color;  
+    text-decoration: none;  
+    font-size: 16px; 
+    font-weight: bold;  
+    padding: 10px 20px;  
+    border: 2px solid $primary-color;  
+    border-radius: 5px;  
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    margin-bottom: 30px;  
 }
 
 .btn-secondary:hover {
-    background-color: $primary-color;  // Background color on hover
-    color: #fff;  // Text color turns white when hovering
+    background-color: $primary-color;  
+    color: #fff;  
 }
 
-//ABOUT SECTION
 #account-banner {
     position: relative;
     background-size: cover;
     background-position: center top;
-    background-color: $secondary-color; // Change to $secondary-color
+    background-color: $secondary-color; 
     width: 100%;
     color: $senary-color;
     padding: 50px 300px;
@@ -488,51 +473,51 @@ html, body {
 }
 
 .people-heading {
-    color: $primary-color; // Set text color to $primary-color
-    font-size: 24px; // Adjust size as needed
+    color: $primary-color; 
+    font-size: 24px; 
     font-weight: normal;
     text-align: left;
     padding: 20px 300px;
 
-    padding-top: 20px; // Adds padding at the top, adjust as needed
+    padding-top: 20px; 
 
     &::after {
         content: '';
         display: block;
-        width: 100%; // Line spans the entire page width
-        height: 0.5px; // Thickness of the line
-        background-color: $primary-color; // Same color as the text
-        margin-top: 10px; // Space between heading and line
+        width: 100%; 
+        height: 0.5px; 
+        background-color: $primary-color; 
+        margin-top: 10px; 
         margin-bottom: 0px;
-        margin-left: auto; // Center the line horizontally
-        margin-right: auto; // Center the line horizontally
+        margin-left: auto; 
+        margin-right: auto; 
     }
 }
 
 .team-members-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); // 2 columns
-    gap: 20px 50px; // Space between items
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px 50px; 
     padding: 0px 300px;
 }
 
 .team-member {
-    border: 1.5px solid $primary-color; // Outline the box with primary color
-    padding: 0px 10px 10px 10px; // Top padding is less (3px), other sides are 10px (left/right) and 5px (bottom)
-    background-color: #fff; // Background color of the box
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Optional: add subtle shadow for depth
-    display: flex; // Flexbox for layout
-    flex-direction: column; // Stack elements vertically
-    text-align: left; // Align text to the left
-    width: 100%; // Box takes up full width of grid item
+    border: 1.5px solid $primary-color; 
+    padding: 0px 10px 10px 10px; 
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; 
+    flex-direction: column; 
+    text-align: left; 
+    width: 100%; 
 
     h3 {
         font-size: 18px;
         color: $primary-color;
         display: flex;
-        justify-content: space-between; // Space between name and logo
-        align-items: center; // Align items vertically in the middle
-        width: 100%; // Ensures the h3 spans the full width
+        justify-content: space-between; 
+        align-items: center; 
+        width: 100%; 
     }
 
     p {
@@ -547,118 +532,113 @@ html, body {
         padding: 8px 15px;
         border-radius: 5px;
         cursor: pointer;
-        margin-top: auto; // Push the button to the bottom of the container
-
+        margin-top: auto; 
 
         &:hover {
-            background-color: darken($primary-color, 10%); // Darken on hover
+            background-color: darken($primary-color, 10%); 
         }
     }
     
 }
 
 
-// Specific styling for the team member logo
 .team-member-logo {
-    width: 50px;  // Adjust the size of the logo image
-    height: auto;  // Maintain the aspect ratio of the image
-    margin-left: 10px; // Add some space between the name and the logo
+    width: 50px;  
+    height: auto;  
+    margin-left: 10px; 
 }
 
-/* Reviews Section */
 .reviews-heading {
-    color: $primary-color;  // Set text color to primary color
-    font-size: 24px;  // Adjust size as needed
+    color: $primary-color;  
+    font-size: 24px;  
     font-weight: normal;
     text-align: left;
-    padding: 20px 300px;  // Adds padding to the left and right, adjust as needed
+    padding: 20px 300px;  
 
     &::before { 
         content: '';
         display: block;
-        width: 100%; // Line spans the entire page width
-        height: 0.5px; // Thickness of the line
-        background-color: $primary-color; // Same color as the text
-        margin-top: 10px; // Space between heading and line
+        width: 100%; 
+        height: 0.5px; 
+        background-color: $primary-color; 
+        margin-top: 10px; 
         margin-bottom: 0px;
-        margin-left: auto; // Center the line horizontally
-        margin-right: auto; // Center the line horizontally
+        margin-left: auto; 
+        margin-right: auto; 
     }
 }
 
 .reviews-heading {
-    color: $primary-color;  // Set text color to primary color
-    font-size: 24px;  // Adjust size as needed
+    color: $primary-color;  
+    font-size: 24px;  
     font-weight: normal;
     text-align: left;
-    padding: 20px 300px;  // Adds padding to the left and right, adjust as needed
+    padding: 20px 300px;  
     padding-top: 15px;
     padding-bottom: 5px;
 
     &::before { 
         content: '';
         display: block;
-        width: 100%; // Line spans the entire page width
-        height: 0.5px; // Thickness of the line
-        background-color: $primary-color; // Same color as the text
-        margin-top: 10px; // Space between heading and line
+        width: 100%; 
+        height: 0.5px; 
+        background-color: $primary-color; 
+        margin-top: 10px; 
         margin-bottom: 0px;
-        margin-left: auto; // Center the line horizontally
-        margin-right: auto; // Center the line horizontally
+        margin-left: auto; 
+        margin-right: auto; 
     }
 }
 
 .reviews-container {
     display: flex;
-    justify-content: center;  // Center the review boxes horizontally
-    gap: 30px;  // Space between the two boxes
-    padding: 20px;  // Optional: Padding for spacing around the container
-    flex-wrap: wrap;  // Ensure that the boxes wrap on smaller screens
-
+    justify-content: center;  
+    gap: 30px;  
+    padding: 20px;  
+    flex-wrap: wrap;  
 }
 
 .review-box {
-    border: 2px solid $primary-color;  // Set the border to $primary-color
+    border: 2px solid $primary-color;  
     padding: 20px;
-    width: 26%;  // Set the width of the review box (adjust as needed)
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  // Optional: Add a subtle shadow for depth
-    background-color: #fff;  // White background for the boxes
+    width: 26%;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;  
 
     p {
         font-size: 14px;
-        margin-bottom: 15px;  // Space between paragraphs
+        margin-bottom: 15px; 
     }
 
     .stars {
-        color: $primary-color;  // Set the star color to primary color
+        color: $primary-color;  
     }
 
     .reviewer-name {
-        color: $primary-color;  // Set the name color to primary color
+        color: $primary-color;  
         
     }
 }
 
 .see-more-link {
-    display: block;  // Make the link a block element
-    text-align: center;  // Center the link
-    color: $secondary-color;  // Set the link color to $secondary-color
-    font-size: 16px;  // Adjust the font size as needed
+    display: block;  
+    text-align: center;  
+    color: $secondary-color;  
+    font-size: 16px;  
     padding: 10px;
     margin-bottom: 20px;
 
     &:hover {
-        text-decoration: underline;  // Optional: underline the link on hover
+        text-decoration: underline;
     }
 }
 
-// ACCOUNT SECTION
 .account-section {
-    color: $primary-color;  // Set text color to primary color
-    font-size: 24px;  // Adjust size as needed
+    color: $primary-color;  
+    font-size: 24px;  
     font-weight: normal;
     text-align: left;
-    padding: 10px 300px;  // Adds padding to the left and right, adjust as needed
+    padding: 10px 300px;  
     margin-top: 40px;
 }
 
@@ -666,80 +646,80 @@ html, body {
     &::after { 
         content: '';
         display: block;
-        width: 100%; // Line spans the entire page width
-        height: 0.5px; // Thickness of the line
-        background-color: $primary-color; // Same color as the text
-        margin-top: 10px; // Space between heading and line
+        width: 100%; 
+        height: 0.5px; 
+        background-color: $primary-color; 
+        margin-top: 10px; 
         margin-bottom: 0px;
-        margin-left: auto; // Center the line horizontally
-        margin-right: auto; // Center the line horizontally
+        margin-left: auto; 
+        margin-right: auto; 
     }
 }
 
 .plan-info {
-    background-color: $primary-color;  // Set background to primary color
-    color: #fff;  // Set text color to white for contrast
-    padding: 20px;  // Add padding inside the box
-    margin-bottom: 20px;  // Space between boxes
+    background-color: $primary-color;  
+    color: #fff;  
+    padding: 20px;  
+    margin-bottom: 20px;  
 }
 
 .tacks-info {
-    background-color: $primary-color;  // Set background to primary color
-    color: #fff;  // Set text color to white for contrast
-    padding: 20px;  // Add padding inside the box
-    margin-bottom: 20px;  // Space between boxes
+    background-color: $primary-color;  
+    color: #fff;  
+    padding: 20px;  
+    margin-bottom: 20px; 
 }
 
 .follow-options {
-    background-color: $primary-color;  // Set background to primary color
-    color: #fff;  // Set text color to white for contrast
-    padding: 20px;  // Add padding inside the box
-    margin-bottom: 20px;  // Space below the box
+    background-color: $primary-color;  
+    color: #fff; 
+    padding: 20px; 
+    margin-bottom: 20px; 
 
     .btn {
-        background: none;  // Remove button background
-        border: none;  // Remove button border
-        color: #fff;  // Set button text color to white
-        text-decoration: underline;  // Underline the links
-        cursor: pointer;  // Pointer cursor for interactivity
-        padding: 0;  // Remove padding
+        background: none; 
+        border: none; 
+        color: #fff; 
+        text-decoration: underline; 
+        cursor: pointer; 
+        padding: 0; 
     }
 }
 
 .notification-settings {
-    background-color: $primary-color;  // Set background to primary color
-    color: #fff;  // Set text color to white for contrast
-    padding: 20px;  // Add padding inside the box
-    margin-bottom: 20px;  // Space below the box
+    background-color: $primary-color;
+    color: #fff;
+    padding: 20px; 
+    margin-bottom: 20px; 
 }
 
 .danger-zone {
-    background-color: $secondary-color;  // Set background to primary color
-    color: #fff;  // Set text color to white for contrast
-    padding: 20px;  // Add padding inside the box
-    margin-bottom: 20px;  // Space below the box
+    background-color: $secondary-color; 
+    color: #fff; 
+    padding: 20px; 
+    margin-bottom: 20px;  
 }
 
 .link {
-    color: #fff;  // Set link color to white for contrast with the box
-    text-decoration: underline;  // Underline links
-    display: block;  // Make each link take up its own line
-    margin-top: 10px;  // Add spacing between links
-    cursor: pointer;  // Show pointer cursor on hover
+    color: #fff;  
+    text-decoration: underline; 
+    display: block; 
+    margin-top: 10px;  
+    cursor: pointer;  
 
     &:hover {
-        text-decoration: none;  // Optional: Remove underline on hover
-        opacity: 0.8;  // Add hover effect
+        text-decoration: none; 
+        opacity: 0.8; 
     }
 }
 
 .follow-options,
 .notification-settings,
 .danger-zone {
-    background-color: $primary-color;  // Set background to primary color
-    color: #fff;  // Set text color to white
-    padding: 20px;  // Add padding
-    margin-bottom: 20px;  // Space below the boxes
+    background-color: $primary-color;  
+    color: #fff; 
+    padding: 20px; 
+    margin-bottom: 20px;  
 }
 
 .follow-options,
@@ -747,9 +727,9 @@ html, body {
 .danger-zone,
 .plan-info,
 .tacks-info {
-   font-size: 20px;  // Set smaller font size
+   font-size: 20px;
 
    h3, p {
-    margin-top: -5px;  // Move text elements up slightly
+    margin-top: -5px;  
 }
 }
