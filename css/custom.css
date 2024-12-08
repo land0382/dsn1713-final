@@ -681,4 +681,22 @@ html, body {
   margin-top: -5px;
 }
 
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+/* For tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+/* For larger devices like desktops */
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+}
+
 /*# sourceMappingURL=custom.css.map */
