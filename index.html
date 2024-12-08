@@ -5,25 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Your Page Title</title>
-    <link rel="stylesheet" href="css/custom.css"> <!-- Link to the compiled CSS file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-        <ul>
-            <li><a href="tack-board.html" class="primary-color">TACK BOARD</a></li>
-            <li><a href="about.html" class="primary-color">ABOUT</a></li>
-            <li><a href="account.html" class="btn-login">LOG IN</a></li>
-        </ul>
-    </nav>
+    <div id="content-wrapper">
+        <!-- Navbar -->
+        <nav id="navbar">
+            <ul>
+                <li><a href="tack-board.html" class="primary-color">TACK BOARD</a></li>
+                <li><a href="about.html" class="primary-color">ABOUT</a></li>
+                <li><a href="account.html" class="btn-login">LOG IN</a></li>
+            </ul>
+        </nav>
 
-    <!-- Logo positioned top-left -->
-    <a href="index.html">
-        <img id="logo" src="images/yak-tack-logo.webp" alt="Yak Tack Logo">
-    </a>
-    
-    
-    <!-- Other content here -->
+        <!-- Logo positioned top-left -->
+        <a href="index.html">
+            <img id="logo" src="images/yak-tack-logo.webp" alt="Yak Tack Logo">
+        </a>
+        
+        <!-- Hero Banner Section -->
+        <section id="hero-banner" style="background-image: url('images/friendly-people-atmosphere.webp'); background-size: cover; background-position: center top; background-color: #255957;">
+            <div class="overlay"></div>
+            <h1>Master New Words with Yak Tack - Personalized Learning, Simplified!</h1>
+            <p>Sign up today and start tacking words to boost your retention! Get personalized reminders straight to your inbox.</p>
+            <a href="account.html" class="btn-signup">Sign Up</a>
+        </section>
+
+        <!-- Latest Tacks Section -->
+        <section id="latest-tacks">
+            <h2>Latest Tacks</h2>
+            <ul>
+                <li><span class="tack-name">hit the shops</span><span class="tack-time">24 minutes ago</span></li>
+                <li><span class="tack-name">chill-out</span><span class="tack-time">107 minutes ago</span></li>
+                <li><span class="tack-name">run-down</span><span class="tack-time">110 minutes ago</span></li>
+            </ul>
+        </section>
+        
+        <section id="most-tacked-this-month">
+            <h2>Most Tacked This Month</h2>
+            <ul>
+                <li><span class="tack-name">hi</span><span class="tack-time">88 tacks</span></li>
+                <li><span class="tack-name">profiligate</span><span class="tack-time">73 tacks</span></li>
+                <li><span class="tack-name">restorative</span><span class="tack-time">59 tacks</span></li>
+            </ul>
+        </section>
+        
+        <section id="leader-board">
+            <h2>Leader Board</h2>
+            <ul>
+                <li><span class="tack-name">Susan Green</span><span class="tack-time">71 pts</span></li>
+                <li><span class="tack-name">Tracey March</span><span class="tack-time">59 pts</span></li>
+                <li><span class="tack-name">James Red</span><span class="tack-time">57 pts</span></li>
+                <li><span class="tack-name">Brandon Jordan</span><span class="tack-time">32 pts</span></li>
+            </ul>
+        </section>
+        
+
+        <!-- Footer Section -->
+        <footer id="footer" style="background-image: url('images/background-with-supplies.webp');">
+            <div class="footer-overlay"></div>
+
+            <!-- Left Section (Contact Me) -->
+            <div class="footer-left">
+                <h3>Contact Us</h3>
+                <p>Have questions or need help with Yak Tack? We're here for you! Reach out to us anytime, and we'll get back to you as soon as possible. Whether you're looking for support or just want to learn more about how Yak Tack can help improve your word retention, don't hesitate to get in touch!</p>
+            </div>
+
+            <!-- Right Section (Social Icons) -->
+            <div class="footer-right">
+                <div class="social-icons">
+                    <a href="https://x.com/yaktack" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:hello@yaktack.com" class="email" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
-
 </html>

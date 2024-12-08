@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tack Board</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
@@ -20,7 +21,76 @@
         </ul>
     </nav>
 
-    <!-- Tack Board content -->
-    <h1></h1>
+    <div id="tack-board-banner">
+        <div class="hero-content">
+            <h1>Tack Board</h1>
+            <p>Personalized learning, one word at a time. Tack words, revisit them, and watch your knowledge grow.</p>
+        </div>
+    </div>
+    
+        
+    
+        <div class="active-tacks">
+            <h2 class="active-tacks-header">Active Tacks: 4</h2>
+            <ul class="tack-list">
+                <li>
+                    <strong>1. intermittent</strong>
+                    <p>Started: Oct 17, 2024</p>
+                    <p>Next Tack: Oct 21, 2024</p>
+                    <p><i class="fas fa-heart" style="color: $senary-color;"></i> 2</p> <!-- Replace with heart icon -->
+                </li>
+                <li>
+                    <strong>2. abscessed</strong>
+                    <p>Started: Oct 18, 2024</p>
+                    <p>Next Tack: Oct 22, 2024</p>
+                    <p><i class="fas fa-heart" style="color: $senary-color;"></i> 0</p> <!-- Replace with heart icon -->
+                </li>
+                <li>
+                    <strong>3. diegetic</strong>
+                    <p>Started: Oct 17, 2024</p>
+                    <p>Next Tack: Oct 21, 2024</p>
+                    <p><i class="fas fa-heart" style="color: $senary-color;"></i> 3</p> <!-- Replace with heart icon -->
+                </li>
+                <li>
+                    <strong>4. clause</strong>
+                    <p>Started: Oct 19, 2024</p>
+                    <p>Next Tack: Oct 23, 2024</p>
+                    <p><i class="fas fa-heart" style="color: $senary-color;"></i> 5</p> <!-- Replace with heart icon -->
+                </li>
+            </ul>
+            <div class="separator-line"></div>
+        </div>
+    
+        <div class="actions">
+            <!-- Logo and Text Container -->
+            <div class="footer-logo-text">
+                <img src="images/yak-tack-logo.webp" alt="Yak Tack Logo" class="footer-logo">
+                <p class="tack-more">Tack More Words!</p>
+            </div>
+            <!-- See More Link -->
+            <a href="index.html" class="btn-secondary">See More</a>
+        </div>
+        
+    </section>
+    
 </body>
+
+<footer id="footer" style="background-image: url('images/background-with-supplies.webp');">
+    <div class="footer-overlay"></div>
+
+    <!-- Left Section (Contact Me) -->
+    <div class="footer-left">
+        <h3>Contact Us</h3>
+        <p>Have questions or need help with Yak Tack? We're here for you! Reach out to us anytime, and we'll get back to you as soon as possible. Whether you're looking for support or just want to learn more about how Yak Tack can help improve your word retention, don't hesitate to get in touch!</p>
+    </div>
+
+    <!-- Right Section (Social Icons) -->
+    <div class="footer-right">
+        <div class="social-icons">
+            <a href="https://x.com/yaktack" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:hello@yaktack.com" class="email" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</footer>
 </html>
+
